@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_host"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.advancednavigation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsAFragment"
+            app:destination="@id/settingsAFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsCFragment"
+            app:destination="@id/settingsCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsAFragment"
+        android:name="com.example.advancednavigation.SettingsAFragment"
+        android:label="fragment_settings_a"
+        tools:layout="@layout/fragment_settings_a" >
+        <action
+            android:id="@+id/action_settingsAFragment_to_BFragment"
+            app:destination="@id/BFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenDFragment"
+        android:name="com.example.advancednavigation.ScreenDFragment"
+        android:label="fragment_screen_d"
+        tools:layout="@layout/fragment_screen_d" >
+        <action
+            android:id="@+id/action_screenDFragment_to_settingsAFragment"
+            app:destination="@id/settingsAFragment" />
+        <action
+            android:id="@+id/action_screenDFragment_to_settingsCFragment"
+            app:destination="@id/settingsCFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsCFragment"
+        android:name="com.example.advancednavigation.SettingsCFragment"
+        android:label="fragment_settings_c"
+        tools:layout="@layout/fragment_settings_c" />
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.example.advancednavigation.BFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+</navigation>

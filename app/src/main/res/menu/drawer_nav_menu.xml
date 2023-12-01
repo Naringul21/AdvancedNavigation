@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item android:title="Group 1">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_fragmentA"
+                    android:title="Settings A" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Group 2">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_fragmentC"
+                    android:title="Settings C" />
+            </group>
+        </menu>
+    </item>
+</menu>
